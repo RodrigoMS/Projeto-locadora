@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A2C8142-679C-4E93-9E05-F22BB112F9CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication3</RootNamespace>
+    <AssemblyName>WindowsFormsApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlterarFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarFilme.Designer.cs">
+      <DependentUpon>AlterarFilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carregando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carregando.Designer.cs">
+      <DependentUpon>Carregando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevolverFilme.Designer.cs">
+      <DependentUpon>DevolverFilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filmes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filmes.designer.cs">
+      <DependentUpon>Filmes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmesLocados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmesLocados.Designer.cs">
+      <DependentUpon>FilmesLocados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmUsuario.Designer.cs">
+      <DependentUpon>FmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterarCliente.Designer.cs">
+      <DependentUpon>AlterarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfirmaAlteracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfirmaAlteracao.Designer.cs">
+      <DependentUpon>FrmConfirmaAlteracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSenhaAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSenhaAdm.Designer.cs">
+      <DependentUpon>FrmSenhaAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetrenteBancoDados.cs" />
+    <Compile Include="LocarFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocarFilme.Designer.cs">
+      <DependentUpon>LocarFilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal_raiz.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlterarFilme.resx">
+      <DependentUpon>AlterarFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carregando.resx">
+      <DependentUpon>Carregando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevolverFilme.resx">
+      <DependentUpon>DevolverFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filmes.resx">
+      <DependentUpon>Filmes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmesLocados.resx">
+      <DependentUpon>FilmesLocados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmUsuario.resx">
+      <DependentUpon>FmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlterarCliente.resx">
+      <DependentUpon>AlterarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfirmaAlteracao.resx">
+      <DependentUpon>FrmConfirmaAlteracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSenhaAdm.resx">
+      <DependentUpon>FrmSenhaAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocarFilme.resx">
+      <DependentUpon>LocarFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8271_128x1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8222_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matrix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eclipse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo_azul[2].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo_azul[2]1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matrix1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escorpião-imagens-de-fundo-nb14598.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
